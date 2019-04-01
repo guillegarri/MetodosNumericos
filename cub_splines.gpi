@@ -1,0 +1,11 @@
+set term svg background rgb 'white'
+set out 'cub_splines.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Comparison for cubic splines"
+set autoscale
+set grid
+set key left
+plot \
+  "interpolation.txt" using 1:7  with lines title "cubic spline", \
+  "exact.txt" using 1:5 with lines title "python's cubic spline"

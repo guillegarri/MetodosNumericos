@@ -1,0 +1,12 @@
+set term svg background rgb 'white'
+set out 'all_splines.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Solution for all splines"
+set autoscale
+set grid
+set key top left
+plot \
+  "interpolation.txt" using 1:2  with lines title "linear spline", \
+  "interpolation.txt" using 1:4 with lines title "quadratic spline", \
+  "interpolation.txt" using 1:7 with lines title "cubic spline"

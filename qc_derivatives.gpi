@@ -1,0 +1,12 @@
+set term svg background rgb 'white'
+set out 'qc_derivatives.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Solution for quadratic and cubic derivatives"
+set autoscale
+set grid
+set key top left
+plot \
+ "interpolation.txt" using 1:6  with lines title "quadratic derivative", \
+ "interpolation.txt" using 1:9 with lines title "cubic derivative", \
+ "exact.txt" using 1:6 with lines title "analytical derivative"
