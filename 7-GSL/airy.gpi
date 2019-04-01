@@ -1,0 +1,11 @@
+set term pdf
+set out "airy.pdf"
+set xlabel "x"
+set ylabel "y"
+set key noenhanced
+set key bottom
+set grid
+set tics out
+plot [-15:5][-1:1] \
+	 "airy.data" using 1:2 with lines title 'Ai(x) from GSL' \
+	,"airy.data" using 1:3 with lines title "Bi(x) from GSL" \
