@@ -1,0 +1,11 @@
+set term svg background rgb 'white'
+set out 'quad_splines.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Comparison for quadratic splines"
+set autoscale
+set grid
+set key top left
+plot \
+  "interpolation.txt" using 1:4  with lines title "quadratic spline", \
+  "exact.txt" using 1:4 with lines title "python's quadratic spline"

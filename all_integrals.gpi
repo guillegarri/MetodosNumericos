@@ -1,0 +1,13 @@
+set term svg background rgb 'white'
+set out 'all_integrals.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Solution for all integrals"
+set autoscale
+set grid
+set key top left
+plot \
+ "interpolation.txt" using 1:3  with lines title "linear integral", \
+ "interpolation.txt" using 1:5 with lines title "quadratic integral", \
+ "interpolation.txt" using 1:8 with lines title "cubic integral", \
+ "exact.txt" using 1:7 with lines title "analytical integral"
