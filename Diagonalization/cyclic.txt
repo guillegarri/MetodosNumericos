@@ -1,0 +1,49 @@
+JACOBI DIAGONALIZATION WITH CYCLIC SWEEPS
+
+The A matrix about to be diagonalized is:
+
+[[0.55868 0.22657 0.68364 0.60969]
+ [0.22657 0.50196 0.07883 0.71477]
+ [0.68364 0.07883 0.71146 0.66777]
+ [0.60969 0.71477 0.66777 0.57586]]
+
+The eigenvalues of A obtained analyticaly are:
+
+[ 2.14182  0.62261 -0.05501 -0.36147]
+
+The eigenvalues obtained from Jacobi after 12 iterations are:
+
+[ 2.14182  0.62261 -0.05501 -0.36147]
+
+The D matrix is then:
+
+[[ 2.14182  0.       0.       0.     ]
+ [ 0.       0.62261  0.       0.     ]
+ [ 0.       0.      -0.05501  0.     ]
+ [ 0.       0.       0.      -0.36147]]
+
+The eigenvector matrix obtained after 12 iterations is:
+
+[[ 0.50447 -0.28874 -0.80997 -0.07804]
+ [ 0.3494   0.7529   0.00296 -0.55772]
+ [ 0.53252 -0.52292  0.55366 -0.36937]
+ [ 0.58297  0.27628  0.19338  0.7392 ]]
+
+The sign-differences and the differces in the order of the colums with the
+matrix obtained analyticaly are not important as long as:
+1.- The signs are complementary, i.e a column (a -b c d) becomes (-a b -c -d)
+2.- The columns have element with the sabe absolute value in the same position
+
+Check that V*D*Vt = A:
+
+[[0.55868 0.22657 0.68364 0.60969]
+ [0.22657 0.50196 0.07883 0.71477]
+ [0.68364 0.07883 0.71146 0.66777]
+ [0.60969 0.71477 0.66777 0.57586]]
+
+Check that Vt*A*V = D:
+
+[[ 2.14182e+00  2.15062e-16  3.94223e-16 -3.55222e-17]
+ [ 1.35825e-16  6.22613e-01 -8.38940e-18 -3.44241e-17]
+ [ 1.86657e-16 -3.03844e-17 -5.50064e-02 -2.44802e-17]
+ [ 8.99367e-19 -9.23279e-18  4.04904e-17 -3.61471e-01]]
