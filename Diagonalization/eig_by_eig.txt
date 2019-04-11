@@ -4,40 +4,37 @@ The number of eigenvalues that are going to be calculated is: 1
 
 The A matrix about to be diagonalized is:
 
-[[0.63465 0.16035 0.03978 0.15032 0.59768 0.11123 0.82862]
- [0.16035 0.39741 0.78148 0.96239 0.6977  0.16001 0.95603]
- [0.03978 0.78148 0.83072 0.68707 0.2526  0.57001 0.36022]
- [0.15032 0.96239 0.68707 0.57367 0.59178 0.33795 0.31063]
- [0.59768 0.6977  0.2526  0.59178 0.42085 0.57097 0.017  ]
- [0.11123 0.16001 0.57001 0.33795 0.57097 0.27064 0.99245]
- [0.82862 0.95603 0.36022 0.31063 0.017   0.99245 0.29516]]
+[[0.96924 0.32454 0.59259 0.86853 0.99228 0.21892 0.02363]
+ [0.32454 0.92273 0.56347 0.6126  0.52698 0.56886 0.7694 ]
+ [0.59259 0.56347 0.77409 0.92554 0.26208 0.17051 0.62716]
+ [0.86853 0.6126  0.92554 0.2815  0.96174 0.43758 0.57252]
+ [0.99228 0.52698 0.26208 0.96174 0.88051 0.9403  0.44597]
+ [0.21892 0.56886 0.17051 0.43758 0.9403  0.70944 0.99114]
+ [0.02363 0.7694  0.62716 0.57252 0.44597 0.99114 0.13809]]
 
 The eigenvalues of A obtained analyticaly are:
 
-[ 3.46844e+00 -1.46842e+00  1.04794e+00  5.72473e-01 -3.72701e-01
-  1.74300e-01  1.05339e-03]
+[ 4.25933  1.21888  0.88696  0.17804 -0.33798 -0.84094 -0.68868]
 
-The lowest eigenvalue obtained after 30 iterations and 0.0063016414642333984 seconds is:
+The lowest eigenvalue obtained after -99 iterations and 0.03035259246826172 seconds is:
 
-[-1.46842  0.       0.       0.       0.       0.       0.     ]
+[0. 0. 0. 0. 0. 0. 0.]
 
 All the eigenvalues obtained after 16 iterations in ascending order are:
 
-[-1.46842e+00 -3.72701e-01  1.05339e-03  1.74300e-01  5.72473e-01
-  1.04794e+00  3.46844e+00]
+[-0.84094 -0.68868 -0.33798  0.17804  0.88696  1.21888  4.25933]
 
-The highest eigenvalue obtained after 17 iterations and 0.002849578857421875 seconds is:
+The highest eigenvalue obtained after 0 iterations and 0.0004456043243408203 seconds is:
 
-[3.46844 0.      0.      0.      0.      0.      0.     ]
+[0. 0. 0. 0. 0. 0. 0.]
 
-All the eigenvalues obtained after 16 iterations in descending order are:
+All the eigenvalues obtained after 0 iterations in descending order are:
 
-[ 3.46844e+00  1.04794e+00  5.72473e-01  1.74300e-01  1.05339e-03
- -3.72701e-01 -1.46842e+00]
+[0. 0. 0. 0. 0. 0. 0.]
 
-The number of iterations needed by the cyclic algorithm was: 16
-The cyclic algorithm took 0.00444483757019043 seconds to reach the solution.
+The number of iterations needed by the cyclic algorithm was: 15
+The cyclic algorithm took 0.005698204040527344 seconds to reach the solution.
 
 The number of iterations needed by the value-by-value algorithm was: 16
-The value-by-value algorithm took 0.0045926570892333984 seconds to reach the solution.
+The value-by-value algorithm took 0.0058078765869140625 seconds to reach the solution.
 

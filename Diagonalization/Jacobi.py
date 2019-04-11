@@ -25,7 +25,7 @@ def jacobi_iter(A):
             break;
         else:
             s_av = s/(n*(n-1)/2.0); # average value of off-diagonal elements
-            for i in range(0, n): # matrix lines (n - 1)?
+            for i in range(0, n):
                 for j in range(i+1, n): # matrix columns
                     if (np.abs(A[i, j]) > s_av):
                         phi = 0.5 * mt.atan2(2.0*A[i, j],(A[i, i] - A[j, j]));
@@ -47,7 +47,6 @@ def jacobi_iter(A):
                         A[i, i] = A[i, i]*c*c + 2.0*A[i, j]*c*s + A[j, j]*s*s;
                         A[j, j] = A[j, j]*c*c - 2.0*A[i, j]*c*s + Aii*s*s;
                         A[i, j] = 0.0;
-                        # Maybe changing the signs we fix the order of the signs in the solution
                         for k in range(0, n):
                             Vkj = V[k, j];
                             V[k, j] = V[k, j]*c - V[k, i]*s;
@@ -83,7 +82,6 @@ def jacobi_eig_low(A, nums):
     iter_mx = int(100);
     e = np.zeros(n);
     V = np.zeros((n, n));
-    #print(nums);
 
     for i in range(0, n):
         V[i, i] = 1.0;
@@ -103,9 +101,7 @@ def jacobi_eig_low(A, nums):
         else:
             s_av = s/(n*(n-1)/2.0); # average value of off-diagonal elements
             for i in range(0, nums):
-                # matrix lines (n - 1)?
                 for j in range(i+1, n):
-                    # matrix columns
                     if (np.abs(A[i, j]) > s_av):
                         phi = 0.5 * mt.atan2(2.0*A[i, j],(A[i, i] - A[j, j])) - mt.pi/2; # remove pi to get high to low
                         s = np.sin(phi);
@@ -132,8 +128,6 @@ def jacobi_eig_low(A, nums):
                             V[k, i] = V[k, i]*c + Vkj*s;
 
         iter = -l;
-        #for i in range(nums, n):
-        #    e[i] = 0.0;
     return iter, e, V;
 
 def jacobi_eig_high(A, nums):
@@ -144,7 +138,6 @@ def jacobi_eig_high(A, nums):
     iter_mx = int(100);
     e = np.zeros(n);
     V = np.zeros((n, n));
-    #print(nums);
 
     for i in range(0, n):
         V[i, i] = 1.0;
@@ -164,9 +157,7 @@ def jacobi_eig_high(A, nums):
         else:
             s_av = s/(n*(n-1)/2.0); # average value of off-diagonal elements
             for i in range(0, nums):
-                # matrix lines (n - 1)?
                 for j in range(i+1, n):
-                    # matrix columns
                     if (np.abs(A[i, j]) > s_av):
                         phi = 0.5 * mt.atan2(2.0*A[i, j],(A[i, i] - A[j, j])); # remove pi to get high to low
                         s = np.sin(phi);
@@ -193,6 +184,4 @@ def jacobi_eig_high(A, nums):
                             V[k, i] = V[k, i]*c + Vkj*s;
 
         iter = -l;
-        #for i in range(nums, n):
-        #    e[i] = 0.0;
-    return iter, e, V;
+        return iter, e, V;

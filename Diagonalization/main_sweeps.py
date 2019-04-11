@@ -8,9 +8,6 @@ from Jacobi import jacobi_iter
 rots = int(0);
 n = int(4);
 A = np.empty((n, n));
-# V = np.empty((n, n));
-# V = np.zeros((n, n), float);
-# e = np.zeros(n, float);
 np.set_printoptions(precision=5)
 
 # Creating a symmetric matrix A
@@ -26,8 +23,6 @@ print(A);
 e, V = np.linalg.eig(A);
 print('\nThe eigenvalues of A obtained analyticaly are:\n');
 print(e);
-# print('\nThe eigenvector matrix obtained analyticaly is:\n');
-# print(V);
 
 sweeps, e, V = jacobi_iter(A);
 print('\nThe eigenvalues obtained from Jacobi after', sweeps, 'iterations are:\n');

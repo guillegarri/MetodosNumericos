@@ -14,9 +14,6 @@ A3 = np.empty((n, n));
 A4 = np.empty((n, n));
 A5 = np.empty((n, n));
 A6 = np.empty((n, n));
-# V = np.empty((n, n));
-# V = np.zeros((n, n), float);
-# e = np.zeros(n, float);
 np.set_printoptions(precision=5)
 
 # Creating a symmetric matrix A
@@ -39,7 +36,6 @@ for i in range(n):
         A5[j, i] = A[j, i];
 
 n_eig = int(1);
-# n_eig = n;
 print('EIGENVALUE CALCULATION FROM LOW TO HIGH\n');
 print('The number of eigenvalues that are going to be calculated is:', n_eig);
 print('\nThe A matrix about to be diagonalized is:\n');
