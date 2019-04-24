@@ -2,7 +2,7 @@ PYTHON = python3
 
 .PHONEY: all
 all: lineq.txt
-lineq.txt: main.py gram_schmidt.py
+lineq.txt: main.py GM.py
 	$(PYTHON) $< > $@
 
 .PHONEY: clean
