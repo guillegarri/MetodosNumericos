@@ -1,0 +1,13 @@
+set term svg background rgb 'white'
+set out 'sine_rk.svg'
+set xlabel "x"
+set ylabel "y"
+set title "Solutions from rungekutta12 for the functions sine and cosine"
+set autoscale
+set grid
+set key bottom left
+plot \
+ "rksol.txt" using 1:2 title "sin(x) with RK"\
+ ,"rksol.txt" using 1:3 title "dsin(x)/dx with RK"\
+ ,"mathsol.txt" using 1:2 with lines title "sin(x) analytical"\
+ ,"mathsol.txt" using 1:3 with lines title "cos(x) analytical"
