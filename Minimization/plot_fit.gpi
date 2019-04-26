@@ -1,0 +1,11 @@
+set term svg background rgb "white"
+set out "plot_fit.svg"
+set xlabel "Time"
+set ylabel "A"
+set title "Fit for the decay data"
+set autoscale
+set grid
+set key top
+plot \
+  "decaydat.txt" with yerrorbars title "Data",\
+  "data.txt" every ::21 with lines title "Fit"
