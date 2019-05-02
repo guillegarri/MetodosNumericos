@@ -1,0 +1,77 @@
+FUNCTIONS INTEGRATED VIA RECURSIVE ADAPTIVE INTEGRATOR
+
+**** SQRT integration from 0 to 1 ****
+
+Numerical solution:  0.6666667534044163
+Analytical solution:  0.6666666666666666
+The function has been called 1800 times.
+Estimated error:  1.6666667534044164e-08
+Actual error:  8.673774964940151e-08
+
+**** INVERSE SQRT integration from 0 to 1 ****
+
+Numerical solution:  1.9999998374049217
+Analytical solution:  2.0
+The function has been called 801228 times.
+Estimated error:  2.999999837404922e-08
+Actual error:  1.6259507829019526e-07
+
+**** LOG/SQRT integration from 0 to 1 ****
+
+Numerical solution:  -3.999999782000019
+Analytical solution:  -4.0
+The function has been called 2896568 times.
+Estimated error:  4.9999997820000195e-08
+Actual error:  2.1799998117799646e-07
+
+**** TEST FUNCTION integration from 0 to 1 ****
+
+Numerical solution:  3.141592802505079
+Analytical solution:  3.141592653589793
+The function has been called 3788 times.
+Estimated error:  4.1415928025050796e-08
+Actual error:  1.4891528588023561e-07
+
+FUNCTIONS INTEGRATED VIA RECURSIVE CLENSHAW-CURTIS VARIABLE TRANSFORMATION
+
+**** INVERSE SQRT integration from 0 to 1 with CC method ****
+
+Numerical solution:  2.0000001398030784
+Analytical solution:  2.0
+The function has been called 1904 times.
+Estimated error:  3.000000139803078e-08
+Actual error:  1.398030784471871e-07
+
+**** TEST FUNCTION integration from 0 to 1 with CC method ****
+
+Numerical solution:  3.1415927273456776
+Analytical solution:  3.141592653589793
+The function has been called 6016 times.
+Estimated error:  4.1415927273456783e-08
+Actual error:  7.375588451097315e-08
+
+FUNCTIONS WITH INFINITE LIMITS INTEGRATED
+
+**** GAUSSIAN FUNCTION integration from zero to +infinity ****
+
+Numerical solution:  0.886226938869493
+Analytical solution:  0.8862269254527579
+The function has been called 3296 times.
+Estimated error:  1.8862269388694933e-08
+Actual error:  1.3416735056281937e-08
+
+**** GAUSSIAN FUNCTION integration from -infinity to zero ****
+
+Numerical solution:  0.886226938869493
+Analytical solution:  0.8862269254527579
+The function has been called 3296 times.
+Estimated error:  1.8862269388694933e-08
+Actual error:  1.3416735056281937e-08
+
+**** GAUSSIAN FUNCTION integration from -infinity to +infinity ****
+
+Numerical solution:  1.772453584055416
+Analytical solution:  1.7724538509055159
+The function has been called 7080 times.
+Estimated error:  2.772453584055416e-08
+Actual error:  2.668500997948797e-07
