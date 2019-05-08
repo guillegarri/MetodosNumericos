@@ -1,0 +1,11 @@
+set term svg background rgb "white"
+set out "plot_error.svg"
+set xlabel "N"
+set ylabel "Error"
+set title "Check that the MC error goes as o(1/sqrt(N))"
+set autoscale
+set grid
+set key right top
+plot \
+  "Error.txt" using 1:2 with lines title "Monte Carlo Error",\
+  "Error.txt" using 1:3 with lines title "o(1/sqrt(N))"
