@@ -1,0 +1,7 @@
+set term svg background rgb "white"
+set out 'gr_orbit.svg'
+set xlabel 'x'
+set ylabel 'y'
+set title 'Orbit'
+set size ratio -1
+plot 'solorbit.dat' using (1/$2)*sin($1):(1/$2)*cos($1) with lines notitle

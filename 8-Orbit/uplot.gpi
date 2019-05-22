@@ -1,0 +1,8 @@
+set term svg background rgb "white"
+set out 'uplot.svg'
+set xlabel 'phi'
+set ylabel 'u'
+set title 'Netownian circular, Newtonian elliptical and General Relativity orbits'
+plot 'solorbit.dat' index 0 with lines title 'Newtonian circular' \
+    ,'solorbit.dat' index 1 with lines title 'Newtonian elliptical' \
+    ,'solorbit.dat' index 2 with lines title 'General Relativity Orbit'
