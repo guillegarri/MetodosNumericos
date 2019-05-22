@@ -1,0 +1,6 @@
+set term svg background rgb 'white'
+set out 'rosenbrock.svg'
+set xlabel 'x'
+set ylabel 'y'
+set title 'Path'
+plot 'rosenbrock.txt' with lines

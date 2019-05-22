@@ -1,0 +1,7 @@
+set term svg background rgb 'white'
+set out 'leastsquares.svg'
+set xlabel 'Time'
+set ylabel 'Activity'
+plot \
+  'data.txt' with errorbars title 'Experimental data' \
+ ,'fit.txt' with lines title 'Least Squares' \
