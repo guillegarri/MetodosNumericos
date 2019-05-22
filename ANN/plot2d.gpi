@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set out "plot2d.svg"
+set xlabel "x"
+set ylabel "y"
+set zlabel "f(x, y)"
+set title "ANN for 2 dimension"
+set autoscale
+set grid
+set key right top
+splot \
+  "outANN.txt" using 1:2:4 with points title "Neural network fit",\
+  "outANN.txt" using 1:2:6 with lines title "Target function"
