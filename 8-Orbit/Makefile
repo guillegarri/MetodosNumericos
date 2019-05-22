@@ -8,7 +8,7 @@ MADEFILES = main_log logistic.svg logistic.dat main_gr uplot.svg solorbit.dat ci
 
 all: logistic.svg uplot.svg elipse.svg circle.svg gr_orbit.svg
 
-logistic.svg:logistic.gpi logistic.dat
+logistic.svg: logistic.gpi logistic.dat
 	gnuplot $<
 
 logistic.dat: main_log
