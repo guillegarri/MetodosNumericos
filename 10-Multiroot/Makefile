@@ -20,4 +20,4 @@ main_Rb: main_Rb.c
 .PHONEY: clean
 clean:
 		find . -type f -executable -delete
-		rm *.out
+		rm *.txt
