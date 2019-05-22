@@ -23,5 +23,5 @@ main_ls: main_ls.c
 .PHONEY: clean
 clean:
 	find . -type f -executable -delete
-	rm *.out
+	rm *.txt
 	rm *.svg
