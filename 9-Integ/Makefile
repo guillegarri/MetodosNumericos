@@ -12,5 +12,5 @@ sol_varmeth.txt: variational_method
 
 .PHONEY: clean
 clean:
-	rm -f *.o *.dat
+	rm -f *.o *.txt
 	find . -type f -executable -delete
