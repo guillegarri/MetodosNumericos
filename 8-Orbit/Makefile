@@ -11,7 +11,7 @@ all: logistic.svg uplot.svg elipse.svg circle.svg gr_orbit.svg
 logistic.svg:logistic.gpi logistic.dat
 	gnuplot $<
 
-logistic.dat:main_log
+logistic.dat: main_log
 	./$< > $@
 
 uplot.svg: uplot.gpi solorbit.dat
@@ -31,7 +31,7 @@ circ.dat elip.dat orbit.dat: solorbit.dat
 	sed -n 3148,6292p solorbit.dat > elipse.dat
 	sed -n 6295,9439p solorbit.dat > gr_orbit.dat
 
-solorbit.dat:main_gr
+solorbit.dat: main_gr
 	./$< > $@
 
 .PHONEY: clean
