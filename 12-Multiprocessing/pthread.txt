@@ -1,0 +1,3 @@
+Total number of inputs used: 10000000 
+Total number of inputs inside the circle: 7854155.000000 
+Pi with pthread is: 3.14166 
