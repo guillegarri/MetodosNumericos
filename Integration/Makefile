@@ -11,3 +11,4 @@ Integration.txt:	main_int.py Integration.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
