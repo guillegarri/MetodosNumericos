@@ -36,3 +36,4 @@ interpolation.txt: main.py b_search.py lin_spline.py quad_spline.py cubic_spline
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
