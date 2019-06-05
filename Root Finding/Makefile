@@ -9,3 +9,4 @@ roots.txt: main_root.py functions.py Newton.py GM.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
