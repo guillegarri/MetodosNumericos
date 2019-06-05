@@ -14,3 +14,4 @@ data.txt: main_fit.py GM.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
