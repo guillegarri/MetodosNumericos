@@ -1,3 +1,4 @@
+
 PYTHON = python3
 PLOTTER = gnuplot
 
@@ -20,3 +21,4 @@ times.txt: main_times.py Jacobi.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
