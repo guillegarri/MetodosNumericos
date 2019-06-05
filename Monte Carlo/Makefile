@@ -19,3 +19,4 @@ MCsolution.txt:	main_mc.py MonteCarlo.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
