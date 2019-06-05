@@ -18,3 +18,4 @@ outANN.txt: main_ann.py ANN.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
