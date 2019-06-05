@@ -17,3 +17,4 @@ data.txt: main_min.py GM.py functionsMin.py NewtonMin.py
 clean:
 	$(RM) *.txt
 	$(RM) *.svg
+	$(RM) __pycache__
