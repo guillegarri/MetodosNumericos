@@ -1,0 +1,33 @@
+The exam problem to solve is: 10.
+"Inverse iteration algorithm for eigenvalues (and eigenvectors)"
+
+* * * E X A M * * *
+Matrix used fort this exercise:
+[[0.0, 2.0, 2.0, 8.0], [2.0, 4.0, 0.0, 9.0], [2.0, 0.0, 1.0, 7.0], [1.0, 9.0, 3.0, 2.0]]
+
+Eigenvalues obtained using numpy.linalg.eig:
+[14.16255517 -6.96866472 -2.0769637   1.88307325]
+
+Eigenvectors obtained using numpy.linalg.eig:
+[[-0.45228924  0.47601877  0.96696974  0.44480393]
+ [-0.58679618  0.43108792  0.03022549 -0.32697737]
+ [-0.36764726  0.43496952 -0.09324215  0.8335191 ]
+ [-0.56208556 -0.63116626 -0.23529097 -0.02193563]]
+
+We will aim for eigenvalue equal to 1.88307. Therefore, s will be 3.
+This can be changed by making s = 12.0, s = -5.0 or s = -1.0 for instance.
+
+* * * S O L U T I O N * * *
+Convergence found after 6 iterations.
+Looking for the eigenvalue (and eigenvector) closest to:  3.0
+Eigenvalue expected:  1.8830732477919216
+Eigenvalue calculated:  1.8830739309139344
+
+Eigenvector expected:  [ 0.44480393 -0.32697737  0.8335191  -0.02193563]
+Eigenvector calculated*:  [-0.44480243  0.32697796 -0.83351967  0.02193559]
+
+*The difference in the sign, if consistent for the rest
+of eigenvectors, does not make the result to be wrong.
+PS: it is.
+
+ Guillermo Garrido Hernández. June 6th 2019.
